@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import $ from 'jquery';
 import './index.css';
-import {App,Hello,NodeList,MyComponent,LikeButton,Input,Life,UserGist,RepoLlst,Avatar} from './App';
+import './test.less'
+// import {App,Login,Hello,NodeList,MyComponent,LikeButton,Input,Life,UserGist,RepoLlst,Avatar} from './App';
+//import Login from './page/login/login.js';
+import MyRouter from './router';
 // import * as serviceWorker from './serviceWorker';
 
 // ReactDOM.render(
@@ -10,6 +12,8 @@ import {App,Hello,NodeList,MyComponent,LikeButton,Input,Life,UserGist,RepoLlst,A
 //     <span>cuidongdong</span>
 //     <span>zhujialin</span>
 // </NodeList>,document.getElementById('root'));
+
+ReactDOM.render(<MyRouter/>,document.getElementById('root'));
 
 // ReactDOM.render(<MyComponent/>,document.getElementById('root'));
 
@@ -23,10 +27,7 @@ import {App,Hello,NodeList,MyComponent,LikeButton,Input,Life,UserGist,RepoLlst,A
 
 // ReactDOM.render(<RepoLlst promise={$.getJSON('https://api.github.com/search/repositories?q=javascript&sort=stars')}/>,document.getElementById('root'));
 
-ReactDOM.render(<Avatar username="dong" />,document.getElementById('root'));
-
-
-
+// ReactDOM.render(<Avatar username="dong" />,document.getElementById('root'));
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
